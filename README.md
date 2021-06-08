@@ -2,10 +2,10 @@
 
 
 
-## Barber Shop Website
+# Barber Shop Website
 This Web application is in its starting phase. As of now I have finished completing the web design portion of the website, creating a simple yet cool looking user interface that is fully responsive to almost all screen sizes including mobile phones. I plan to make this a fully functional web application that allows users to book appointments at their local barbershop.
 
-# Front-End Languages
+## Front-End Languages
 - HTML
 - CSS
 - JavaScript
