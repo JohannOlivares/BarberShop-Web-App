@@ -12,7 +12,7 @@ This Web application is in its starting phase. As of now I have finished complet
 
 # What can this Web Application do?
 As I said, this web app is still in it's infancy. For now this solution is just a static website with the only real funtionality being used to:
-- Promote a barbershop 
+- Promote a barber shop 
 - Display services and products
 - Display links to their social handles 
 - Displaying contact information 
