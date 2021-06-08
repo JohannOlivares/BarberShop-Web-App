@@ -12,11 +12,11 @@ This Web application is in its starting phase. As of now I have finished complet
 
 # What can this Web Application do?
 As I said, this web app is still in it's infancy. For now this solution is just a static website with the only real funtionality being used to:
-- promote a barbershop 
-- showing thier services
-- links to their social handles 
+- Promote a barbershop 
+- Display services and products
+- Display links to their social handles 
 - Displaying contact information 
-- Showing location as well as the directions to the location using the Google Maps API.
+- Show location as well as the directions using the Google Maps API.
 
 # Preview
 https://user-images.githubusercontent.com/60246437/120981338-71670f00-c72c-11eb-8129-fb3a067676cc.mov
