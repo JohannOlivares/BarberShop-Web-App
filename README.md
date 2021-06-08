@@ -13,6 +13,6 @@ This Web application is in its starting phase. As of now I have finished complet
 # Preview
 https://user-images.githubusercontent.com/60246437/120981338-71670f00-c72c-11eb-8129-fb3a067676cc.mov
 
-# Future of this project
-I plan to finish implementing the logic for booking appointments and add a whole user interface for viewing, deleting and editng upcoming customer appointments.
+# Future plans for this project
+For now the plan is deliever a finished product that can actually be used in real-life. I plan to finish implementing the logic for booking appointments and adding a whole user interface for viewing, deleting and editng appointments. However, that is not where I want to end it. I have some ideas for making this into something much bigger. Even so, I am still unsure of which direction to take it and only time will tell where this can go.
 
