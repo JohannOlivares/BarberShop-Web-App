@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <!--Favicon-->
+        <link rel="shortcut icon" type="image/png" href="img/logo2.png"/>
+        <!--End of Favicon-->
+
+        <!--CSS Styles-->
+        <Link rel="stylesheet" href="css/styles.css" type="text/css" />      
+        <!--End of CSS Stytles-->
+
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+        <!--End of Google Fonts-->
+
+        <!--Import Responsive Nav-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--End-->
+        
+        <!--Import Slider-->
+        <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js" integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI=" crossorigin="anonymous">
+        </script>     
+        <!--End-->
+
+
+    </head>
+    <body>
+        <!--Navigation-->
+        <nav id="nav-container" >
+            <ul class="nav-bar" id="nav">
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#about">About Us</a></li>
+
+                <li class="social-logos"><a><img src="img/face.png" height="40px" width="40px"></a></li>
+                <li class="social-logos"><a><img src="img/insta.png" height="40px" width="40px"></a></li>
+                <li class="social-logos"><a><img src="img/snap.png" height="40px" width="40px"></a></li>
+
+                <li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>    
+        </nav>
+        <!--End of Navigation-->
+
+        <!--Slidee Banner-->
+        <section id="slider-container">
+             
+            <div id="slider">
+                <ul id="lightSlider">
+                    <li>
+                        <img src="img/barber1.jpg">
+                    </li>
+                    <li>
+                        <img src="img/barber2.jpg">
+                    </li>
+                    <li>
+                        <img src="img/barber3.jpg">
+                    </li>
+                </ul>   
+            </div>
+
+            <div id="logo-container"> 
+                <a href="index.html" ><img src="img/Logo2.png" alt="East-Side Cutters Logo"></a>
+                <button onclick="window.location = 'appointment.html'">Schedule Appointment</button>
+            </div>
+            
+        </section>
+        <!--End of Slide Banner-->
+
+        <!--Tagline-->
+        <section id="about">
+            <article>
+                <h1>East Side Cutters</h1>
+                <p>
+                    A Las Vegas local barber shop offering the best
+                    that mens grooming has to offer.
+                </p>
+                <p>702-123-4567</p>
+            </article>
+        </section>
+        <!--End of Tagline-->
+
+        <!--Img Gallery-->
+        <section id="gallery">
+             <img src="img/haircutgallery.jpeg">
+         </section>
+         <!--End of Img Gallery-->
+
+        <!--Schedule-->
+        <section id="schedule" class="grid-container">
+ 
+            <div class="grid-item">
+                <h1>Services</h1>
+                <ul class="service-list">
+                    <li>Standard Haircut - 30$ (15 min)</li>
+                    <li>Beard Trim - 40$ (15 min)</li>
+                    <li>Haircut and Beard - 60$ (30 min)</li>
+                    <li>Facial - 20$ (30 min)</li>
+                    <li>Full Service - 100$ (1 hour)</li>
+                </ul>
+            </div>
+
+            <div class="grid-item">
+                <h1>Schedule</h1>
+                <table>
+                    <tr>
+                        <td>Monday - Friday</td>
+                        <td>7:00am - 7:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday & Sunday </td>
+                        <td>7:00am - 8:00pm</td>
+                    </tr>
+                </table>
+
+                <div class="btn">
+                    <button onclick="window.location = 'appointment.html'">Schedule Appointment</button>
+                </div>
+            </div>
+            
+        </section>
+        <!--End of Schedule-->
+
+        <!--Location-->
+        <section id="location">
+            <div class="location-details">
+                <h1>Location</h1>
+                <p>East Side Cutters</p>
+                <p>2021 Street Ave,</p>
+                <p>Las Vegas, NV 12345</p>
+            </div>
+
+            <div id="map">
+                <iframe
+                    width="100%"
+                    height="90%"
+                    style="border:0"
+                    loading="lazy"
+                    allowfullscreen
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBg-bvp20XzaAsxGW2iD79Hg3Q2HIwNvNA
+                        &q=EastSide+Cutters,Las Vegas+NV">
+                </iframe>
+            </div>
+
+        </section>     
+        <!--End of Location-->
+
+        <!--Footer-->
+        <footer id="footer">
+            <ul>
+                <li>Phone Number: 702-123-4567</li>
+                <li>Polices</li>
+                <li>Social</li>
+            </ul>
+        </footer>
+        <!--End of Footer-->
+
+        <!--JavaScript-->
+        <script src="js/lightslider.js"></script>  
+        <script>
+            function myFunction() {
+                var x = document.getElementById("nav");
+                if (x.className === "nav-bar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "nav-bar";
+                }
+            }
+        </script>
+  
+        <script type="text/javascript">
+            $(document).ready(function() {
+              $("#lightSlider").lightSlider({
+                  item: 1,
+                  auto: true,
+                  loop: true,
+              }); 
+
+            });
+          </script>
+        <!--End of JavaScript-->
+
+    </body>
+</html>

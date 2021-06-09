@@ -1,0 +1,414 @@
+/*
+ * author: Johann Olivares
+ * file: styles.css
+ * date: 05/31/2021
+ * Desciption: The style selectors for the East Side
+ *             Cutters BarberShop landing page.
+ *
+ * Table of Contents:
+ * 1.0 General Styles
+ * 2.0 Navigation Bar Styles
+ * 3.0 Slider Styles
+ * 4.0 About Us Styles
+ * 5.0 Image Gallery Styles
+ * 6.0 Servics/Schedule Styles
+ * 7.0 Location Styles
+ * 8.0 Footer Styles
+ * 9.0 Form Styles
+ * 10.0 Media Queries
+ */
+
+/* 1.0 General Styles */
+h1, p ,a, button, li, table, form {
+    font-family: 'Pattaya', sans-serif;
+}
+html, body {
+    scroll-behavior: smooth; 
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body {
+    scroll-snap-type: y mandatory;
+}
+section {
+    scroll-snap-align: start;
+}
+/* End of General Styles */
+
+/* 2.0 Navigation Bar Styles*/
+#nav-container ul {
+    list-style-type: none;
+    overflow: hidden;
+    font-size: 1.8em;
+    background-color: black;
+    color: white;
+    padding: .5em 0 .5em 0;
+    margin: 0;
+}
+.nav-bar .social-logos {
+    float: right;
+}
+.nav-bar li {
+    float: left;
+}
+a:link, a:visited{
+    text-decoration: none;
+    color: white;
+}
+.nav-bar li a {
+    padding: 30px;
+}
+.nav-bar li a:hover {
+    background-color: darkslategray;
+}
+.nav-bar li img {
+    padding: 0 .5em 0 0;
+}
+.nav-bar .icon {
+    display: none;
+}
+/* End of Navigation Styles */
+
+/* 3.0 Slider Styles */
+#slider-container {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 85%;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+#logo-container img {
+    margin: 5em auto auto auto;
+    padding: 0;
+    padding: .5em 1.5em .5em 1.5em;
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    width: auto;
+    height: 50%;
+}
+#logo-container button {
+    background-color: darkred;
+    font-size: 1.5em;
+    border: none;
+    color: white;
+    margin: 20em auto auto auto;
+    padding: .5em 1.5em .5em 1.5em;
+    position: absolute;
+    top: 0; left: 0; right: 0;
+}
+    
+#logo-container button:hover {
+    background-color: #EA0000;
+}
+#slider {
+    width: 100%;
+    height: 100%; 
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+#lightSlider img { 
+    background-color: black;
+    height: 575px;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+/* End of Slider Styles*/
+
+/* 4.0 About Us */
+#about{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 5% 0 5%;
+    padding: 0;
+}
+#about h1 {
+    margin-top: 1em;
+    font-size: 2em;
+}
+/* End of About Us Styles */
+
+/* 5.0 Image Gallery Styles */
+#gallery img {
+    display: block;
+    width: 65%;
+    height: auto;
+    margin: auto;
+    padding: 1%;
+}
+/* End of  Image Gallery Styles */
+
+/* 6.0 Services/Schedule Styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    padding: 1%;
+    margin: 0 5% 5% 5%;
+}
+.grid-item {
+    font-size: 1.5em;
+    padding: 1%;
+    margin: 0 10% 0 10%;
+}
+.service-list, table {
+    font-size: 1em;
+    padding: 1%;
+    margin: auto;
+}
+tr, td {
+    padding: 1px 5px 1px 5px;;
+}
+.btn button {
+    width: 100%;
+    border: none;
+    background-color: darkred;
+    color: white;
+    font-size: 1em;
+    margin: auto;
+    padding: 1%;
+
+}
+.btn button:hover {
+    background-color: #EA0000;
+}
+/* End of Service/Schedule Styles*/
+
+
+/* 7.0 Location Styles*/
+#location {
+    display: flex;
+    font-size: 1.5em;
+    border: 1px solid black;
+    padding: 1%;
+    margin: 1%;
+}
+.location-details {
+    padding: 1%;
+    margin: 1%;
+}
+.location-details p, .location-details h1 {
+    font-size: 1.5 em;
+}
+#map {
+    height: 400px;
+    width: 70%;
+    padding: 1%;
+    margin: auto;
+}
+/* End of Location Styles*/
+
+/* 8.0 Footer */
+#footer ul {
+    list-style-type: none;
+    text-align: center;
+    font-size: 20px;
+    background-color: darkslategray;
+    color: white;
+    padding: 5%;
+    margin: 0;
+}
+#footer ul li {
+    display: inline;
+    padding: 0 10px 0 10px;
+}
+/* End of Footer */
+
+/* 9.0 Form Styles*/
+#form-container {
+    background-image: url('../img/appointmentBack.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 1.2em;
+    border: 1px solid black;
+    height: 100%;
+    margin: auto;
+    padding: 1em;
+}
+#form-container h1 {
+    text-align: center;
+}
+.form{
+    background-color: white;
+    margin: 1em auto; 
+    padding: 2em;
+    width: 25%;
+    height: auto;
+}
+.form input, .form label, .form select {
+    display: block;
+    text-align: left;
+    padding: .5em;
+    width: 100%;
+}
+.form select {
+    margin: 1em auto;
+    width: 50%;
+}
+.form input[type=submit] {
+    font-size: .9em;
+    text-align: center;
+    border: none;
+    background-color: darkred;
+    color: white;
+}
+.form input[type=submit]:hover {
+    background-color: #EA0000;
+}
+/* End of Form Styles*/
+
+/* 10.0 Media Queries */
+@media screen and (max-width: 600px), (max-width: 1000px) {
+
+    /*Responsive Nav*/
+    .nav-bar li a {display: none;}
+    .nav-bar a.icon {
+      float: left;
+      display: block;
+    }
+    /*End of Responsive Nav*/
+
+    /*Responsive Content*/
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0em;
+        grid-row-gap: 1%;
+        margin: 5%;
+    }
+    .service-list, table {
+        font-size: .9em;
+    }
+    /*End of Responsive Content*/
+    
+    /*Map Styles*/
+    #location {
+        display: block;
+        border: 1px solid black;
+        padding: 1%;
+        margin: 1%;
+        text-align: center;
+    }
+    .location-details {
+        font-size: .9em;
+        padding: 1%;
+        margin: 1%;
+    }
+    .location-details p, .location-details h1 {
+        font-size: 1.5em;
+    }
+    #map {
+        height: 200px;
+        width: 90%;
+        padding: 1%;
+        margin: auto;
+    }
+    /*End of Map Styles*/
+    #logo-container img {
+        margin: 5em auto auto auto;
+        padding: 0;
+        padding: .5em 1.5em .5em 1.5em;
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        width: auto;
+        height: 40%;
+    }
+    #logo-container button {
+        background-color: darkred;
+        font-size: 1.5em;
+        border: none;
+        color: white;
+        margin: 15em auto auto auto;
+        padding: .5em 1.5em .5em 1.5em;
+        position: absolute;
+        top: 0; left: 0; right: 0;
+    }
+  }
+/*Small narrow screens*/
+@media screen  and (max-width: 450px) and (max-height:850px) {
+    #logo-container img {
+        margin: 5em auto auto auto;
+        padding: 0;
+        padding: .5em 1.5em .5em 1.5em;
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        width: auto;
+        height: 30%;
+    }
+    #logo-container button {
+        background-color: darkred;
+        font-size: 1.5em;
+        border: none;
+        color: white;
+        margin: 15em auto auto auto;
+        padding: .5em 1.5em .5em 1.5em;
+        position: absolute;
+        top: 0; left: 0; right: 0;
+    }
+}
+/*Ipad screens*/
+@media screen  and (min-width: 760px) and (min-height: 1024px) {
+    #slider-container {
+        position: relative;
+        left: 0;
+        top: 0;
+        height: 55%;
+        width: 100%;
+        padding: 0;
+        margin: 0 0 1em 0;
+    }
+    #logo-container img {
+        margin: 5em auto auto auto;
+        padding: 0;
+        padding: .5em 1.5em .5em 1.5em;
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        width: auto;
+        height: 30%;
+    }
+    #logo-container button {
+        background-color: darkred;
+        font-size: 1.5em;
+        border: none;
+        color: white;
+        margin: 20em auto auto auto;
+        padding: .5em 1.5em .5em 1.5em;
+        position: absolute;
+        top: 0; left: 0; right: 0;
+    }
+}
+
+/*login*/
+@media screen and (max-width: 700px) {
+    .form{
+        background-color: white;
+        margin: 1em auto; 
+        padding: 2em;
+        width: 65%;
+        height: auto;
+    }
+
+}
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px), (max-width: 800px) {
+    .nav-bar.responsive {position: relative;}
+    .nav-bar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav-bar.responsive a, .nav-bar.responsive li  {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Set Appointment</title>
+        <!--Favicon-->
+        <link rel="shortcut icon" type="image/png" href="img/logo2.png"/>
+        <!--End of Favicon-->
+        
+        <!--CSS Styles-->
+        <Link rel="stylesheet" href="css/styles.css" type="text/css" />      
+        <!--End of CSS Stytles-->
+
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+        <!--End of Google Fonts-->
+
+    </head>
+
+    <body>
+        <!--Appoitment Form-->
+        <section id="form-container">
+            
+            <form class="form">
+                <h1>Set Appointment</h1>
+
+                <label>Name</label>
+                <input type="text" name="name" value="" required/>
+
+                <label>Phone Number</label>
+                <input type="tel" name="phonenum" value="" required/>
+
+                <label>Date</label>
+                <input type="date" name="date" value="" required/>
+
+                <label>Available Times</label>
+                <select name="time" id="time">
+                    <option value="time1">7:30 AM</option>
+                    <option value="time2">8:30 AM</option>
+                    <option value="time3">9:30 AM</option>
+                    <option value="time4">10:30 AM</option>
+                </select>
+
+                <input type="submit" name="submit" value="Submit"/>
+
+            </form>
+        </section>
+        <!--End Of Appointment Form-->
+        
+    </body>
+
+</html>
